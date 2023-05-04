@@ -1,0 +1,17 @@
+{% extends "csstemple/moban.html" %}
+
+{% block my %} 
+    <h1>test moban and url</h1>
+    <!-- <ul>
+        {% for a in content %}
+            <li>{{ a }}</li>
+        {% endfor %}
+    </ul> -->
+    <form action="{% url 'add' %}" method="post">
+        {% csrf_token %}
+        <input type="text" name="" id="">
+        <input type="submit" value="提交">
+    </form>
+    <a href="{% url 'add' %}">跳转链接</a>
+{% endblock %}
+        

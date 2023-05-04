@@ -1,8 +1,10 @@
 from django.shortcuts import render
-from datetime import date
 # Create your views here.
 def index(request):
-    today = date.today()
-    return render(request, 'index.html', {
-        'time': today == '2024-01-01'
+    a = ['hi','L', 'X', 'Y']
+    return render(request, 'csstemple/index.html', {
+        'content' : a
     })
+
+def add(request):
+    return render(request, 'csstemple/add.html')
