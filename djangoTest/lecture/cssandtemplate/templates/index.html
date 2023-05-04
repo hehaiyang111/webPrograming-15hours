@@ -1,0 +1,13 @@
+{% load static %}
+<!DOCTYPE html>
+<head>
+    <title>test day</title>
+    <link rel="stylesheet" href="{% static '1.css' %}">
+</head>
+<body>
+    {% if time %}
+    <h1>Yes</h1>
+    {% else %}
+    <h1>No</h1>
+    {% endif %}
+</body>
