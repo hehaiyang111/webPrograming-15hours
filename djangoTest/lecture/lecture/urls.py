@@ -21,5 +21,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('hello/', include('hello.urls')),
     path('cssandtemplate/', include('cssandtemplate.urls')),
-    path('show/', include('showfestival.urls'))
+    path('show/', include('showfestival.urls')),
+    path('form/', include('formtasktest.urls')),
+
 ]

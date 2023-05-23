@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>form test</title>
+    </head>
+    <body>
+        <!-- action = '/form/result' -->
+        <form action="{% url 'result' %}" method="post">
+            {% csrf_token %}
+            <input type="text" value="">
+            <input type="submit" value="提交">
+            <!-- {{form}} -->
+        </form>
+    </body>
+</html>
